@@ -12,7 +12,7 @@ const Button = () => {
     setIsLoading(true)
     setTimeout(() => {
       setIsLoading(false);
-    }, 500);
+    }, 200);
     setCount(count + 1);
     setText("Clicked");
   };
