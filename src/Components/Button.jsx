@@ -7,9 +7,8 @@ const Button = () => {
   const [text, setText] = useState("Click me");
   const [isLoading, setIsLoading] = useState(false);
 
-
   const handleClick = () => {
-    setIsLoading(true)
+    setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
     }, 200);
@@ -23,17 +22,18 @@ const Button = () => {
     }
     if (count >= 6) {
       setText("You're clicking too much");
-    } if (count >= 10) {
+    }
+    if (count >= 10) {
       setText("MAXIMUM CLICKS REACHED");
     }
   }, [count]);
 
   return (
     <div>
-      <CriticalButton 
-      onClick={handleClick}
-      disabled={count >= 10}
-      loading={isLoading}
+      <CriticalButton
+        onClick={handleClick}
+        disabled={count >= 10}
+        loading={isLoading}
       >
         {text} {count}
       </CriticalButton>
