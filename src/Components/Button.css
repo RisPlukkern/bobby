@@ -1,0 +1,9 @@
+.button {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#e66465, #9198e5);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+}
